@@ -1,32 +1,116 @@
-# React + TypeScript + Vite
+# RoamVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+RoamVerse is a travel storytelling website that showcases destinations, journeys, blogs, gallery content, and curated travel inspiration.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://arnavthakurr.github.io/RoamVerse/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Explore destinations across India and the world
+- Travel journey and wishlist tracking
+- Blog and gallery sections
+- Admin demo login for content management
+- Responsive travel UI with modern dark theme
 
-## Expanding the Oxlint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Before running this project, make sure you have installed:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Node.js 18 or later
+- npm 9 or later
+
+To check:
+
+```bash
+node -v
+npm -v
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Installation
+
+1. Open a terminal in the project folder
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+## Run the app locally
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown in the terminal, usually:
+
+```text
+http://localhost:5173/
+```
+
+## Build for production
+
+```bash
+npm run build
+```
+
+This creates a production build inside the `dist` folder.
+
+## Preview the production build
+
+```bash
+npm run preview
+```
+
+## Deploy to GitHub Pages
+
+This project is already configured for GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+This publishes the app to:
+
+```text
+https://arnavthakurr.github.io/RoamVerse/
+```
+
+## Project structure
+
+```text
+RoamVerse/
+├── src/
+├── public/
+├── package.json
+├── vite.config.ts
+├── README.md
+├── index.html
+└── tsconfig*.json
+```
+
+## Common issues
+
+### Port already in use
+If `5173` is already busy, Vite will choose another port automatically. Check the terminal output for the correct local URL.
+
+### Dependencies not installed
+Run:
+
+```bash
+npm install
+```
+
+### Build errors
+Try:
+
+```bash
+rm -rf node_modules dist
+npm install
+npm run build
+```
+
+## Notes
+
+This project uses Vite + React + TypeScript and stores demo travel data locally in the browser for the wishlist and gallery features.
