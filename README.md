@@ -2,10 +2,6 @@
 
 RoamVerse is a travel storytelling website that showcases destinations, journeys, blogs, gallery content, and curated travel inspiration.
 
-## Live Website
-
-https://arnavthakurr.github.io/RoamVerse/
-
 ## Features
 
 - Explore destinations across India and the world
@@ -61,20 +57,6 @@ This creates a production build inside the `dist` folder.
 
 ```bash
 npm run preview
-```
-
-## Deploy to GitHub Pages
-
-This project is already configured for GitHub Pages:
-
-```bash
-npm run deploy
-```
-
-This publishes the app to:
-
-```text
-https://arnavthakurr.github.io/RoamVerse/
 ```
 
 ## Project structure
